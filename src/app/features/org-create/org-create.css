@@ -1,0 +1,72 @@
+:host {
+  display: block;
+  max-width: var(--form-max-width);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  margin: var(--space-2) 0 var(--space-4);
+}
+
+.back {
+  font-size: var(--font-size-sm);
+}
+
+.hint-box {
+  margin-bottom: var(--space-4);
+}
+
+.summary {
+  margin-bottom: var(--space-4);
+}
+
+.summary ul {
+  margin: 0;
+  padding-inline-start: var(--space-6);
+}
+
+.link {
+  font: inherit;
+  color: var(--color-danger);
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: start;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+label {
+  font-weight: var(--font-weight-bold);
+}
+
+.note {
+  font-weight: normal;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.hint {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* Errors say "Error" through text and the border, never colour alone */
+.error {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-danger);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}

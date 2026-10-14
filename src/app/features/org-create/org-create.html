@@ -1,0 +1,116 @@
+<a routerLink="/" class="back">{{ 'form.back' | t }}</a>
+<h1>{{ 'form.title' | t }}</h1>
+
+@if (!store.isComplete()) {
+  <p class="box box-info hint-box" role="status">{{ 'form.uniquenessPartial' | t }}</p>
+}
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <!-- The submit button is NOT the only signal: this summary lists every problem and links to the field. -->
+  @if (submitted() && summaryItems().length > 0) {
+    <div class="box box-error summary" role="alert">
+      <h2>{{ 'form.summaryTitle' | t }}</h2>
+      <ul>
+        @for (item of summaryItems(); track item.field) {
+          <li>
+            <button type="button" class="link" (click)="focusField(item.field)">
+              {{ item.key | t }}
+            </button>
+          </li>
+        }
+      </ul>
+    </div>
+  }
+
+  <!-- Name -->
+  <div class="field">
+    <label for="field-name">
+      {{ 'form.field.name' | t }} <span class="note">({{ 'form.required' | t }})</span>
+    </label>
+    <input
+      id="field-name"
+      type="text"
+      autocomplete="off"
+      formControlName="name"
+      [attr.aria-invalid]="errorKey('name') ? 'true' : null"
+      aria-describedby="hint-name error-name"
+    />
+    <p id="hint-name" class="hint">{{ 'form.hint.name' | t }}</p>
+    <p id="error-name" class="error" [hidden]="!errorKey('name')">
+      @if (errorKey('name'); as key) {
+        {{ key | t }}
+      }
+    </p>
+  </div>
+
+  <!-- Status -->
+  <div class="field">
+    <label for="field-status">
+      {{ 'form.field.status' | t }} <span class="note">({{ 'form.required' | t }})</span>
+    </label>
+    <select
+      id="field-status"
+      formControlName="status"
+      [attr.aria-invalid]="errorKey('status') ? 'true' : null"
+      aria-describedby="error-status"
+    >
+      <option value="">{{ 'form.statusPlaceholder' | t }}</option>
+      @for (status of statuses; track status) {
+        <option [value]="status">{{ 'status.' + status | t }}</option>
+      }
+    </select>
+    <p id="error-status" class="error" [hidden]="!errorKey('status')">
+      @if (errorKey('status'); as key) {
+        {{ key | t }}
+      }
+    </p>
+  </div>
+
+  <!-- Owner email -->
+  <div class="field">
+    <label for="field-ownerEmail">
+      {{ 'form.field.ownerEmail' | t }} <span class="note">({{ 'form.required' | t }})</span>
+    </label>
+    <input
+      id="field-ownerEmail"
+      type="email"
+      autocomplete="off"
+      formControlName="ownerEmail"
+      [attr.aria-invalid]="errorKey('ownerEmail') ? 'true' : null"
+      aria-describedby="error-ownerEmail"
+    />
+    <p id="error-ownerEmail" class="error" [hidden]="!errorKey('ownerEmail')">
+      @if (errorKey('ownerEmail'); as key) {
+        {{ key | t }}
+      }
+    </p>
+  </div>
+
+  <!-- Member count (optional) -->
+  <div class="field">
+    <label for="field-memberCount">
+      {{ 'form.field.memberCount' | t }} <span class="note">({{ 'form.optional' | t }})</span>
+    </label>
+    <input
+      id="field-memberCount"
+      type="text"
+      inputmode="numeric"
+      autocomplete="off"
+      formControlName="memberCount"
+      [attr.aria-invalid]="errorKey('memberCount') ? 'true' : null"
+      aria-describedby="hint-memberCount error-memberCount"
+    />
+    <p id="hint-memberCount" class="hint">{{ 'form.hint.memberCount' | t }}</p>
+    <p id="error-memberCount" class="error" [hidden]="!errorKey('memberCount')">
+      @if (errorKey('memberCount'); as key) {
+        {{ key | t }}
+      }
+    </p>
+  </div>
+
+  <div class="actions">
+    <!-- Not disabled on purpose: a disabled button hides WHY nothing happens. -->
+    <button type="submit" class="button">{{ 'form.submit' | t }}</button>
+    <a routerLink="/" class="button button-secondary">{{ 'form.cancel' | t }}</a>
+  </div>
+</form>
