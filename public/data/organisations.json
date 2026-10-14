@@ -1,0 +1,1327 @@
+[
+ {
+  "id": 1,
+  "name": "Northwind Traders",
+  "status": "active",
+  "memberCount": 42,
+  "owner": {
+   "email": "ops@northwind.example"
+  },
+  "createdAt": "2024-03-11T09:12:00Z"
+ },
+ {
+  "id": 2,
+  "name": "",
+  "status": "ACTIVE",
+  "memberCount": "12",
+  "owner": {
+   "email": "a@b.example"
+  },
+  "createdAt": 1710150720000
+ },
+ {
+  "id": 3,
+  "name": null,
+  "status": "Active",
+  "memberCount": -1,
+  "createdAt": "2024-01-02T00:00:00Z"
+ },
+ {
+  "id": 42,
+  "name": "Globex Corporation",
+  "status": "suspended",
+  "memberCount": 7,
+  "owner": {
+   "email": "hq@globex.example"
+  },
+  "createdAt": "2023-11-30T14:45:10Z"
+ },
+ {
+  "id": 42,
+  "name": "Globex Corporation Ltd",
+  "status": "actve",
+  "memberCount": 7,
+  "owner": {
+   "email": "hq@globex.example"
+  },
+  "createdAt": "2023-11-30T14:45:10Z"
+ },
+ {
+  "id": 6,
+  "name": "شركة الأمل 🚀",
+  "status": "active",
+  "memberCount": 3,
+  "owner": {
+   "email": "info@amal.example"
+  },
+  "createdAt": "2025-06-01T08:00:00Z"
+ },
+ {
+  "id": 7,
+  "name": "The Very Long Organisation Name That Somebody Actually Typed Into The Field Because Nobody Validated It And It Keeps Going Well Past Any Reasonable Column Width And Still Has Not Stopped",
+  "status": "inactive",
+  "memberCount": 0,
+  "owner": {
+   "email": "long@example.com"
+  },
+  "createdAt": "2024-07-19T16:20:00Z"
+ },
+ {
+  "id": 8,
+  "name": "Initech",
+  "status": null,
+  "memberCount": null,
+  "owner": {
+   "email": "not-an-email"
+  },
+  "createdAt": "not a date"
+ },
+ {
+  "id": 9,
+  "name": "Vandelay Logistics",
+  "status": "INACTIVE",
+  "memberCount": 24,
+  "owner": {
+   "email": "not-an-email"
+  },
+  "createdAt": "not a date"
+ },
+ {
+  "id": 10,
+  "name": "Oscorp Industries",
+  "status": "SUSPENDED",
+  "memberCount": 63,
+  "owner": {
+   "email": "ops@oscorpindustries.example"
+  },
+  "createdAt": null
+ },
+ {
+  "id": 11,
+  "name": "Stark Energy Stark Energy Stark Energy Stark Energy Stark Energy Stark Energy Stark Energy Stark Energy Stark Energy Stark Energy Stark Energy Stark Energy ",
+  "status": "Active",
+  "memberCount": 286,
+  "owner": {
+   "email": "ops@starkenergy.corp.example"
+  },
+  "createdAt": "2023-02-19T18:40:00Z"
+ },
+ {
+  "id": 12,
+  "name": "Gringotts Health",
+  "status": "activ",
+  "memberCount": -3,
+  "owner": {
+   "email": "ops@gringottshealth.example.com"
+  },
+  "createdAt": "2025-10-15T11:19:00Z"
+ },
+ {
+  "id": 13,
+  "name": "Massive Foods",
+  "status": "suspended",
+  "memberCount": 37,
+  "owner": {
+   "email": "not-an-email"
+  },
+  "createdAt": "2025-03-25T10:09:00Z"
+ },
+ {
+  "id": 14,
+  "name": "Vandelay Systems",
+  "status": "active",
+  "memberCount": "254",
+  "owner": {
+   "email": "ops@vandelaysystems.corp.example"
+  },
+  "createdAt": "2025-02-27T02:17:00Z"
+ },
+ {
+  "id": 15,
+  "name": "Massive Foods",
+  "status": null,
+  "memberCount": 177,
+  "owner": {
+   "email": "ops@massivefoods.example"
+  },
+  "createdAt": "2025-06-06T19:07:00Z"
+ },
+ {
+  "id": 16,
+  "name": "Gringotts Labs",
+  "status": "active",
+  "memberCount": 229,
+  "owner": {
+   "email": "ops@gringottslabs.example.com"
+  },
+  "createdAt": "2024-03-27T13:55:00Z"
+ },
+ {
+  "id": 17,
+  "name": "Cyberdyne Logistics",
+  "status": null,
+  "memberCount": 90,
+  "owner": null,
+  "createdAt": "2023-11-08T00:31:00Z"
+ },
+ {
+  "id": 18,
+  "name": "Sterling Energy",
+  "status": "active",
+  "memberCount": 64,
+  "owner": {
+   "email": "ops@sterlingenergy.corp.example"
+  },
+  "createdAt": "2022-08-28T21:51:00Z"
+ },
+ {
+  "id": 19,
+  "name": "",
+  "status": "actve",
+  "memberCount": 225,
+  "owner": {
+   "email": "ops@soylentlabs.example"
+  },
+  "createdAt": 1723492728604
+ },
+ {
+  "id": 20,
+  "name": "Dunder Logistics",
+  "status": "active",
+  "memberCount": 177,
+  "owner": {
+   "email": "ops@dunderlogistics.corp.example"
+  },
+  "createdAt": null
+ },
+ {
+  "id": 21,
+  "name": "Vandelay Capital",
+  "status": "active",
+  "memberCount": 245,
+  "owner": {
+   "email": "ops@vandelaycapital.corp.example"
+  },
+  "createdAt": "2023-09-01T06:33:00Z"
+ },
+ {
+  "id": 22,
+  "name": "Hooli Capital",
+  "status": "active",
+  "memberCount": 265,
+  "owner": {
+   "email": "ops@hoolicapital.example.com"
+  },
+  "createdAt": "2023-06-25T07:34:00Z"
+ },
+ {
+  "id": 23,
+  "name": "Soylent Holdings",
+  "status": "inactive",
+  "memberCount": 12.5,
+  "owner": {
+   "email": "ops@soylentholdings.example"
+  },
+  "createdAt": "2025-06-24T00:01:00Z"
+ },
+ {
+  "id": 24,
+  "name": "Pied Piper Systems",
+  "status": "active",
+  "memberCount": 112,
+  "createdAt": "2023-08-07T10:13:00Z"
+ },
+ {
+  "id": 25,
+  "name": "Pied Piper Health",
+  "status": "Active",
+  "memberCount": 61,
+  "owner": {
+   "email": "ops@piedpiperhealth.example.com"
+  },
+  "createdAt": "2023-08-06T13:50:00Z"
+ },
+ {
+  "id": 26,
+  "name": "Hooli Capital",
+  "status": "active",
+  "memberCount": 87,
+  "owner": {
+   "email": "ops@hoolicapital.example"
+  },
+  "createdAt": "2022-03-19T14:51:00Z"
+ },
+ {
+  "id": 27,
+  "name": "Wayne Studios",
+  "status": "Suspended",
+  "memberCount": 67,
+  "owner": {
+   "email": "ops@waynestudios.example"
+  },
+  "createdAt": "2022-12-21T03:33:00Z"
+ },
+ {
+  "id": 28,
+  "name": "Acme Foods",
+  "status": "Active",
+  "memberCount": 149,
+  "owner": {
+   "email": "ops@acmefoods.corp.example"
+  },
+  "createdAt": "2023-10-11T08:34:00Z"
+ },
+ {
+  "id": 29,
+  "name": "Prestige Studios",
+  "status": null,
+  "memberCount": "256",
+  "owner": {
+   "email": "ops@prestigestudios.example"
+  },
+  "createdAt": "2024-13-45"
+ },
+ {
+  "id": 30,
+  "name": "Gringotts Energy",
+  "status": "active",
+  "memberCount": 284,
+  "createdAt": "2024-11-17T16:35:00Z"
+ },
+ {
+  "id": 31,
+  "name": "Umbrella Labs",
+  "status": "suspended",
+  "memberCount": 12.5,
+  "owner": {
+   "email": "ops@umbrellalabs.corp.example"
+  },
+  "createdAt": "2022-02-15T10:39:00Z"
+ },
+ {
+  "id": 32,
+  "name": "Gringotts Studios",
+  "status": "active",
+  "memberCount": 267,
+  "owner": {
+   "email": "ops@gringottsstudios.example.com"
+  },
+  "createdAt": "2023-08-05T13:07:00Z"
+ },
+ {
+  "id": 33,
+  "name": "Aperture Labs",
+  "status": "active",
+  "memberCount": 187,
+  "owner": {
+   "email": "ops@aperturelabs.example"
+  },
+  "createdAt": "2024-03-15T07:47:00Z"
+ },
+ {
+  "id": 34,
+  "name": null,
+  "status": "inactive",
+  "memberCount": 263,
+  "owner": {
+   "email": "ops@wonkacapital.example.com"
+  },
+  "createdAt": "2024-07-07T11:20:00Z"
+ },
+ {
+  "id": 35,
+  "name": "  DUNDER SYSTEMS  ",
+  "status": "suspended",
+  "memberCount": "151",
+  "owner": {
+   "email": "ops@dundersystems.corp.example"
+  },
+  "createdAt": "2022-02-26T07:56:00Z"
+ },
+ {
+  "id": 36,
+  "name": "",
+  "status": "active",
+  "memberCount": 207,
+  "owner": {
+   "email": "not-an-email"
+  },
+  "createdAt": "2025-12-11T02:17:00Z"
+ },
+ {
+  "id": 37,
+  "name": "Hooli Foods",
+  "status": "active",
+  "memberCount": 113,
+  "owner": {
+   "email": "ops@hoolifoods.example"
+  },
+  "createdAt": 1674107408079
+ },
+ {
+  "id": 38,
+  "name": "Stark Logistics",
+  "status": "active",
+  "memberCount": 25,
+  "owner": {
+   "email": "ops@starklogistics.example"
+  },
+  "createdAt": "2023-05-21T09:33:00Z"
+ },
+ {
+  "id": 39,
+  "name": "Acme Foods",
+  "status": "active",
+  "memberCount": 7,
+  "owner": {
+   "email": "ops@acmefoods.example"
+  },
+  "createdAt": "2023-09-16T07:59:00Z"
+ },
+ {
+  "id": 40,
+  "name": "Dunder Studios",
+  "status": "active",
+  "memberCount": 110,
+  "createdAt": null
+ },
+ {
+  "id": 41,
+  "name": "Hooli Health",
+  "status": "active",
+  "memberCount": 220,
+  "owner": {
+   "email": "ops@hoolihealth.example"
+  },
+  "createdAt": 1663266117381
+ },
+ {
+  "id": 42,
+  "name": "Tyrell Group",
+  "status": "active",
+  "memberCount": 134,
+  "createdAt": "2024-09-11T07:02:00Z"
+ },
+ {
+  "id": 43,
+  "name": "Gringotts Foods",
+  "status": "SUSPENDED",
+  "memberCount": "102",
+  "owner": {
+   "email": "ops@gringottsfoods.example"
+  },
+  "createdAt": "2022-02-09T02:09:00Z"
+ },
+ {
+  "id": 44,
+  "name": "Prestige Studios",
+  "status": "ACTIVE",
+  "memberCount": 199,
+  "owner": {
+   "email": "ops@prestigestudios.example.com"
+  },
+  "createdAt": "2025-03-10T23:39:00Z"
+ },
+ {
+  "id": 45,
+  "name": "Monsters Logistics",
+  "status": "suspended",
+  "memberCount": -1,
+  "owner": null,
+  "createdAt": "2022-11-19T22:43:00Z"
+ },
+ {
+  "id": 46,
+  "name": "Stark Partners",
+  "status": "INACTIVE",
+  "memberCount": 285,
+  "owner": {
+   "email": "ops@starkpartners.example"
+  },
+  "createdAt": "2022-11-18T21:15:00Z"
+ },
+ {
+  "id": 47,
+  "name": "Bluth Labs",
+  "status": "suspended",
+  "memberCount": 12.5,
+  "owner": {
+   "email": "ops@bluthlabs.corp.example"
+  },
+  "createdAt": "2025-05-26T02:54:00Z"
+ },
+ {
+  "id": 48,
+  "name": "Northwind traders",
+  "status": "active",
+  "memberCount": 245,
+  "owner": {
+   "email": "ops@gringottspartners.corp.example"
+  },
+  "createdAt": "2024-01-20T20:41:00Z"
+ },
+ {
+  "id": 49,
+  "name": "Sterling Energy",
+  "status": "active",
+  "memberCount": 6,
+  "owner": {
+   "email": "ops@sterlingenergy.example.com"
+  },
+  "createdAt": "2022-08-09T21:06:00Z"
+ },
+ {
+  "id": 50,
+  "name": null,
+  "status": "suspended",
+  "memberCount": 102,
+  "owner": {
+   "email": "ops@massivelabs.example.com"
+  },
+  "createdAt": "2022-08-01T09:29:00Z"
+ },
+ {
+  "id": 51,
+  "name": "Soylent Labs",
+  "status": "suspended",
+  "memberCount": -3,
+  "owner": {
+   "email": "ops@soylentlabs.example"
+  },
+  "createdAt": "2024-06-05T19:52:00Z"
+ },
+ {
+  "id": 52,
+  "name": "Gringotts Partners",
+  "status": "active",
+  "memberCount": 81,
+  "owner": {
+   "email": null
+  },
+  "createdAt": "2025-11-15T12:19:00Z"
+ },
+ {
+  "id": 53,
+  "name": null,
+  "status": "inactive",
+  "memberCount": 61,
+  "owner": {
+   "email": "not-an-email"
+  },
+  "createdAt": "2022-12-10T08:23:00Z"
+ },
+ {
+  "id": 54,
+  "name": "Tyrell Industries",
+  "status": "active",
+  "memberCount": 52,
+  "owner": {
+   "email": "ops@tyrellindustries.example"
+  },
+  "createdAt": "2024-11-05T07:17:00Z"
+ },
+ {
+  "id": 55,
+  "name": "Acme Health",
+  "status": "inactive",
+  "memberCount": 283,
+  "owner": {
+   "email": "ops@acmehealth.corp.example"
+  },
+  "createdAt": "2023-12-03T01:59:00Z"
+ },
+ {
+  "id": 56,
+  "name": "Umbrella Studios",
+  "status": "active",
+  "memberCount": 87,
+  "owner": {
+   "email": "ops@umbrellastudios.example.com"
+  },
+  "createdAt": "2025-06-10T09:16:00Z"
+ },
+ {
+  "id": 57,
+  "name": "Bluth Health",
+  "status": "inactive",
+  "memberCount": 61,
+  "owner": {
+   "email": "ops@bluthhealth.example"
+  },
+  "createdAt": "2023-02-07T16:57:00Z"
+ },
+ {
+  "id": 58,
+  "name": "Oscorp Logistics",
+  "status": "suspended",
+  "memberCount": 98,
+  "owner": {
+   "email": "ops@oscorplogistics.example"
+  },
+  "createdAt": 1700569039939
+ },
+ {
+  "id": 59,
+  "name": "Dunder Partners",
+  "status": "suspended",
+  "memberCount": null,
+  "owner": {
+   "email": "ops@dunderpartners.example.com"
+  },
+  "createdAt": "2024-06-25T01:31:00Z"
+ },
+ {
+  "id": 60,
+  "name": "Soylent Labs",
+  "status": "active",
+  "memberCount": "127",
+  "createdAt": "2025-11-15T13:19:00Z"
+ },
+ {
+  "id": 42,
+  "name": "Gringotts Energy",
+  "status": "Inactive",
+  "memberCount": null,
+  "owner": {
+   "email": "ops@gringottsenergy.example"
+  },
+  "createdAt": "2025-09-28T14:28:00Z"
+ },
+ {
+  "id": 42,
+  "name": "Massive Labs",
+  "status": "suspended",
+  "memberCount": 20,
+  "owner": {
+   "email": "ops@massivelabs.example"
+  },
+  "createdAt": "2023-04-19T01:41:00Z"
+ },
+ {
+  "id": 63,
+  "name": "Stark Labs",
+  "status": "ACTIVE",
+  "memberCount": 153,
+  "owner": {
+   "email": "ops@starklabs.corp.example"
+  },
+  "createdAt": "2023-07-09T07:50:00Z"
+ },
+ {
+  "id": 64,
+  "name": "Cyberdyne Group",
+  "status": "SUSPENDED",
+  "memberCount": 120,
+  "owner": {
+   "email": "ops@cyberdynegroup.corp.example"
+  },
+  "createdAt": "2023-01-14T22:41:00Z"
+ },
+ {
+  "id": 65,
+  "name": "Tyrell Holdings",
+  "status": "inactive",
+  "memberCount": 12.5,
+  "owner": {
+   "email": "ops@tyrellholdings.example"
+  },
+  "createdAt": "2025-01-23T10:45:00Z"
+ },
+ {
+  "id": 66,
+  "name": "Monsters Labs",
+  "status": "active",
+  "memberCount": -5,
+  "owner": {
+   "email": "ops@monsterslabs.example"
+  },
+  "createdAt": "2024-13-45"
+ },
+ {
+  "id": 67,
+  "name": "Cyberdyne Group",
+  "status": "actve",
+  "memberCount": 28,
+  "owner": {
+   "email": "ops@cyberdynegroup.corp.example"
+  },
+  "createdAt": "2023-07-02T06:01:00Z"
+ },
+ {
+  "id": 68,
+  "name": "Vandelay Capital",
+  "status": "active",
+  "memberCount": 40,
+  "owner": {
+   "email": "ops@vandelaycapital.example"
+  },
+  "createdAt": "2024-04-06T20:59:00Z"
+ },
+ {
+  "id": 69,
+  "name": "Vandelay Group",
+  "status": "Active",
+  "memberCount": 55,
+  "owner": {
+   "email": "ops@vandelaygroup.example"
+  },
+  "createdAt": "2022-05-03T11:26:00Z"
+ },
+ {
+  "id": 70,
+  "name": "Aperture Partners",
+  "status": "active",
+  "memberCount": 25,
+  "owner": {
+   "email": "ops@aperturepartners.corp.example"
+  },
+  "createdAt": "2025-04-12T17:58:00Z"
+ },
+ {
+  "id": 71,
+  "name": "Northwind traders",
+  "status": "INACTIVE",
+  "memberCount": 20,
+  "owner": {
+   "email": "ops@cyberdynehealth.example.com"
+  },
+  "createdAt": "2022-08-03T01:16:00Z"
+ },
+ {
+  "id": 72,
+  "name": "Sterling Industries",
+  "status": "active",
+  "memberCount": "162",
+  "owner": {
+   "email": "ops@sterlingindustries.example.com"
+  },
+  "createdAt": "not a date"
+ },
+ {
+  "id": 73,
+  "name": "Massive Partners",
+  "status": "active",
+  "memberCount": 220,
+  "owner": {
+   "email": "ops@massivepartners.example.com"
+  },
+  "createdAt": "2023-08-06T00:51:00Z"
+ },
+ {
+  "id": 74,
+  "name": "Vandelay Group",
+  "status": "active",
+  "memberCount": 40,
+  "owner": {
+   "email": "ops@vandelaygroup.corp.example"
+  }
+ },
+ {
+  "id": 75,
+  "name": "Oscorp Labs",
+  "status": "active",
+  "memberCount": "",
+  "owner": null,
+  "createdAt": "2022-04-04T13:31:00Z"
+ },
+ {
+  "id": 76,
+  "name": "Cyberdyne Capital",
+  "status": "suspended",
+  "memberCount": 62,
+  "owner": {
+   "email": "ops@cyberdynecapital.example.com"
+  },
+  "createdAt": "2024-05-19T08:23:00Z"
+ },
+ {
+  "id": 77,
+  "name": "Aperture Energy",
+  "status": "active",
+  "memberCount": 167,
+  "owner": {
+   "email": "ops@apertureenergy.example"
+  },
+  "createdAt": "not a date"
+ },
+ {
+  "id": 78,
+  "name": "Gringotts Holdings",
+  "status": "inactive",
+  "memberCount": 12.5,
+  "owner": {
+   "email": "not-an-email"
+  },
+  "createdAt": "2024-04-04T01:12:00Z"
+ },
+ {
+  "id": 79,
+  "name": "Wonka Group",
+  "status": null,
+  "memberCount": 133,
+  "owner": null,
+  "createdAt": "2022-02-21T19:45:00Z"
+ },
+ {
+  "id": 80,
+  "name": "Tyrell Industries",
+  "status": "SUSPENDED",
+  "memberCount": "104",
+  "owner": {
+   "email": "ops@tyrellindustries.example"
+  },
+  "createdAt": "2024-07-22T11:11:00Z"
+ },
+ {
+  "id": 81,
+  "name": "Oscorp Labs",
+  "status": "inactive",
+  "memberCount": 281,
+  "owner": {
+   "email": "ops@oscorplabs.example"
+  },
+  "createdAt": 1721505811781
+ },
+ {
+  "id": 82,
+  "name": "Pied Piper Partners",
+  "status": "inactive",
+  "memberCount": null,
+  "owner": {
+   "email": null
+  },
+  "createdAt": "not a date"
+ },
+ {
+  "id": 83,
+  "name": "Prestige Systems",
+  "status": "inactive",
+  "memberCount": 83,
+  "owner": {
+   "email": "ops@prestigesystems.example"
+  },
+  "createdAt": "2022-01-18T04:41:00Z"
+ },
+ {
+  "id": 84,
+  "name": "Wonka Logistics",
+  "status": "active",
+  "memberCount": 145,
+  "owner": {
+   "email": "ops@wonkalogistics.example"
+  },
+  "createdAt": "2023-02-04T12:31:00Z"
+ },
+ {
+  "id": 85,
+  "name": "Umbrella Group",
+  "status": "activ",
+  "memberCount": 27,
+  "owner": {
+   "email": "ops@umbrellagroup.corp.example"
+  },
+  "createdAt": "2025-02-23T19:44:00Z"
+ },
+ {
+  "id": 86,
+  "name": "  GRINGOTTS LOGISTICS  ",
+  "memberCount": 111,
+  "owner": {
+   "email": "ops@gringottslogistics.example"
+  },
+  "createdAt": 1734442784534
+ },
+ {
+  "id": 87,
+  "name": "Umbrella Health",
+  "status": "active",
+  "memberCount": 60,
+  "owner": {
+   "email": "ops@umbrellahealth.example.com"
+  },
+  "createdAt": "2025-09-28T20:49:00Z"
+ },
+ {
+  "id": 88,
+  "name": "Massive Studios",
+  "status": "inactive",
+  "memberCount": 91,
+  "owner": {
+   "email": "ops@massivestudios.example"
+  },
+  "createdAt": "2022-10-16T14:15:00Z"
+ },
+ {
+  "id": 89,
+  "name": "Dunder Labs",
+  "status": "ACTIVE",
+  "memberCount": 65,
+  "owner": {
+   "email": "not-an-email"
+  },
+  "createdAt": "2025-06-03T14:32:00Z"
+ },
+ {
+  "id": 90,
+  "name": "Monsters Labs",
+  "status": "active",
+  "memberCount": 12.5,
+  "owner": {
+   "email": "ops@monsterslabs.example.com"
+  },
+  "createdAt": "2023-01-28T02:39:00Z"
+ },
+ {
+  "id": 91,
+  "name": "Wonka Health",
+  "status": "active",
+  "memberCount": 33,
+  "owner": {
+   "email": "ops@wonkahealth.example.com"
+  },
+  "createdAt": "2024-03-11T19:17:00Z"
+ },
+ {
+  "id": 92,
+  "name": "Prestige Foods",
+  "status": "suspended",
+  "memberCount": 259,
+  "owner": {
+   "email": "ops@prestigefoods.example"
+  },
+  "createdAt": "2024-06-02T06:11:00Z"
+ },
+ {
+  "id": 93,
+  "name": "Tyrell Labs",
+  "status": "suspended",
+  "memberCount": 24,
+  "owner": {
+   "email": "ops@tyrelllabs.corp.example"
+  },
+  "createdAt": "2024-08-18T16:37:00Z"
+ },
+ {
+  "id": 94,
+  "name": "Pied Piper Foods",
+  "status": "inactive",
+  "memberCount": 188,
+  "owner": {
+   "email": "ops@piedpiperfoods.corp.example"
+  },
+  "createdAt": "2023-06-11T02:28:00Z"
+ },
+ {
+  "id": 95,
+  "name": "Aperture Health",
+  "status": "suspended",
+  "memberCount": 160,
+  "owner": {
+   "email": "ops@aperturehealth.corp.example"
+  },
+  "createdAt": 1673157609483
+ },
+ {
+  "id": 96,
+  "name": "Sterling Health",
+  "status": "active",
+  "memberCount": 11,
+  "owner": {
+   "email": "ops@sterlinghealth.example"
+  },
+  "createdAt": null
+ },
+ {
+  "id": 97,
+  "name": null,
+  "status": "inactive",
+  "memberCount": 81,
+  "owner": {
+   "email": "ops@piedpiperenergy.example"
+  },
+  "createdAt": "2022-04-23T04:28:00Z"
+ },
+ {
+  "id": 98,
+  "name": "Tyrell Industries",
+  "status": "active",
+  "memberCount": "287",
+  "owner": {
+   "email": "ops@tyrellindustries.example.com"
+  },
+  "createdAt": "2025-10-17T23:31:00Z"
+ },
+ {
+  "id": 99,
+  "name": "Cyberdyne Logistics",
+  "status": "active",
+  "memberCount": 53,
+  "owner": {
+   "email": "ops@cyberdynelogistics.example"
+  },
+  "createdAt": "2024-13-45"
+ },
+ {
+  "id": 100,
+  "name": "Aperture Labs",
+  "status": "active",
+  "memberCount": 24,
+  "owner": {
+   "email": "ops@aperturelabs.corp.example"
+  },
+  "createdAt": "2025-12-18T00:24:00Z"
+ },
+ {
+  "id": 101,
+  "name": "Cyberdyne Labs",
+  "status": "active",
+  "memberCount": 118,
+  "owner": {
+   "email": "ops@cyberdynelabs.corp.example"
+  },
+  "createdAt": "2022-02-11T23:59:00Z"
+ },
+ {
+  "id": 102,
+  "name": "Oscorp Health",
+  "memberCount": 135,
+  "owner": {
+   "email": "ops@oscorphealth.example.com"
+  },
+  "createdAt": "2023-02-17T00:10:00Z"
+ },
+ {
+  "id": 103,
+  "name": "Vandelay Holdings",
+  "status": "inactive",
+  "memberCount": 168,
+  "owner": {
+   "email": "ops@vandelayholdings.corp.example"
+  },
+  "createdAt": "2023-07-28T20:58:00Z"
+ },
+ {
+  "id": 104,
+  "name": null,
+  "status": "inactive",
+  "memberCount": null,
+  "createdAt": "not a date"
+ },
+ {
+  "id": 105,
+  "name": "",
+  "status": "ACTIVE",
+  "memberCount": "14",
+  "owner": {
+   "email": "ops@wonkasystems.example"
+  },
+  "createdAt": "2022-03-23T20:40:00Z"
+ },
+ {
+  "id": 106,
+  "name": "",
+  "status": "active",
+  "memberCount": 196,
+  "owner": {
+   "email": "ops@soylentstudios.example"
+  },
+  "createdAt": "2023-04-07T03:02:00Z"
+ },
+ {
+  "id": 107,
+  "name": "Aperture Group",
+  "status": "active",
+  "memberCount": 67,
+  "createdAt": "2023-05-11T10:27:00Z"
+ },
+ {
+  "id": 108,
+  "name": "Vandelay Energy",
+  "status": "suspended",
+  "memberCount": 243,
+  "owner": {
+   "email": "ops@vandelayenergy.example.com"
+  },
+  "createdAt": "2022-07-01T13:33:00Z"
+ },
+ {
+  "id": 109,
+  "name": "Hooli Energy",
+  "status": "ACTIVE",
+  "memberCount": 87,
+  "owner": {
+   "email": "not-an-email"
+  },
+  "createdAt": "2022-09-07T09:48:00Z"
+ },
+ {
+  "id": 110,
+  "name": "Northwind traders",
+  "status": "suspended",
+  "memberCount": 177,
+  "owner": {
+   "email": null
+  },
+  "createdAt": "2024-10-06T09:52:00Z"
+ },
+ {
+  "id": 111,
+  "name": "Hooli Group",
+  "status": "suspended",
+  "memberCount": -1,
+  "owner": {
+   "email": "ops@hooligroup.corp.example"
+  },
+  "createdAt": "2024-06-04T12:59:00Z"
+ },
+ {
+  "id": 112,
+  "name": "Oscorp Studios",
+  "status": "suspended",
+  "memberCount": 87,
+  "owner": {
+   "email": "ops@oscorpstudios.example.com"
+  },
+  "createdAt": "2023-08-05T17:38:00Z"
+ },
+ {
+  "id": 113,
+  "name": "Wayne Group",
+  "status": "suspended",
+  "memberCount": 165,
+  "owner": {
+   "email": "ops@waynegroup.example"
+  },
+  "createdAt": "2025-08-23T08:37:00Z"
+ },
+ {
+  "id": 114,
+  "name": "Tyrell Foods",
+  "status": "enabled",
+  "memberCount": 79,
+  "owner": {
+   "email": "ops@tyrellfoods.corp.example"
+  },
+  "createdAt": "2023-04-24T10:38:00Z"
+ },
+ {
+  "id": 115,
+  "name": "Stark Logistics",
+  "status": "active",
+  "memberCount": -1,
+  "owner": {
+   "email": "ops@starklogistics.example.com"
+  },
+  "createdAt": "2023-03-26T09:46:00Z"
+ },
+ {
+  "id": 116,
+  "name": "",
+  "status": "active",
+  "memberCount": 204,
+  "createdAt": "2023-09-21T09:29:00Z"
+ },
+ {
+  "id": 117,
+  "name": "Oscorp Capital",
+  "status": "suspended",
+  "memberCount": 300,
+  "owner": {
+   "email": "ops@oscorpcapital.corp.example"
+  },
+  "createdAt": "2025-04-22T23:41:00Z"
+ },
+ {
+  "id": 118,
+  "name": "Stark Group",
+  "status": "pending",
+  "memberCount": 160,
+  "createdAt": "2022-07-08T12:45:00Z"
+ },
+ {
+  "id": 119,
+  "name": "Monsters Health",
+  "status": "activ",
+  "memberCount": 167,
+  "owner": {
+   "email": null
+  },
+  "createdAt": "2025-08-04T01:16:00Z"
+ },
+ {
+  "id": 120,
+  "name": "Bluth Holdings",
+  "status": null,
+  "memberCount": 262,
+  "owner": {
+   "email": "ops@bluthholdings.example"
+  },
+  "createdAt": "2024-09-11T13:47:00Z"
+ },
+ {
+  "id": 121,
+  "name": null,
+  "status": "SUSPENDED",
+  "memberCount": 182,
+  "owner": {
+   "email": "ops@starkcapital.corp.example"
+  },
+  "createdAt": "2022-05-09T12:25:00Z"
+ },
+ {
+  "id": 122,
+  "name": "Northwind traders",
+  "status": "Active",
+  "memberCount": 114,
+  "owner": {
+   "email": "ops@prestigefoods.example.com"
+  },
+  "createdAt": "2025-09-08T12:29:00Z"
+ },
+ {
+  "id": 123,
+  "name": "Gringotts Health",
+  "status": "suspended",
+  "memberCount": 115,
+  "owner": {
+   "email": "ops@gringottshealth.example"
+  },
+  "createdAt": "2024-11-21T13:29:00Z"
+ },
+ {
+  "id": 124,
+  "name": "Cyberdyne Foods",
+  "memberCount": 129,
+  "owner": {
+   "email": "ops@cyberdynefoods.example.com"
+  },
+  "createdAt": "2023-08-01T23:51:00Z"
+ },
+ {
+  "id": 125,
+  "name": "Hooli Health",
+  "status": "active",
+  "memberCount": 78,
+  "owner": {
+   "email": "ops@hoolihealth.example.com"
+  },
+  "createdAt": "2025-01-03T18:57:00Z"
+ },
+ {
+  "id": 126,
+  "name": "Acme Holdings",
+  "status": "active",
+  "memberCount": null,
+  "owner": {
+   "email": "ops@acmeholdings.example.com"
+  },
+  "createdAt": "2022-10-05T07:11:00Z"
+ },
+ {
+  "id": 127,
+  "name": "Wonka Energy",
+  "status": "suspended",
+  "memberCount": 46,
+  "owner": {
+   "email": "ops@wonkaenergy.corp.example"
+  },
+  "createdAt": "2024-04-16T22:13:00Z"
+ },
+ {
+  "id": 128,
+  "name": "Tyrell Partners",
+  "status": "active",
+  "memberCount": 71,
+  "owner": {
+   "email": "ops@tyrellpartners.example.com"
+  },
+  "createdAt": "2025-09-02T15:29:00Z"
+ },
+ {
+  "id": 129,
+  "name": "Acme Logistics",
+  "status": "active",
+  "memberCount": 239,
+  "owner": {
+   "email": "ops@acmelogistics.corp.example"
+  },
+  "createdAt": "2025-11-10T14:23:00Z"
+ },
+ {
+  "id": 130,
+  "name": "Acme Industries",
+  "status": "activ",
+  "memberCount": 23,
+  "owner": {
+   "email": "ops@acmeindustries.corp.example"
+  },
+  "createdAt": "2024-02-17T15:31:00Z"
+ },
+ {
+  "id": 131,
+  "name": "Pied Piper Systems",
+  "status": "INACTIVE",
+  "memberCount": 269,
+  "owner": {
+   "email": "ops@piedpipersystems.corp.example"
+  },
+  "createdAt": "2023-05-14T10:27:00Z"
+ },
+ {
+  "id": 132,
+  "name": "Northwind traders",
+  "status": "active",
+  "memberCount": null,
+  "owner": {
+   "email": "ops@vandelaystudios.example.com"
+  },
+  "createdAt": "not a date"
+ },
+ {
+  "id": 133,
+  "name": "",
+  "status": "suspended",
+  "memberCount": 207,
+  "owner": {
+   "email": "ops@umbrellapartners.corp.example"
+  },
+  "createdAt": 1724934536834
+ },
+ {
+  "id": 134,
+  "name": "Dunder Energy",
+  "status": "Active",
+  "memberCount": "",
+  "createdAt": "2022-11-21T14:40:00Z"
+ },
+ {
+  "id": 135,
+  "name": "Acme Systems",
+  "status": "active",
+  "memberCount": 158,
+  "owner": {
+   "email": "ops@acmesystems.corp.example"
+  },
+  "createdAt": 1712152102394
+ },
+ {
+  "id": 136,
+  "name": "Umbrella Labs",
+  "status": "inactive",
+  "memberCount": 294,
+  "owner": {
+   "email": "ops@umbrellalabs.corp.example"
+  },
+  "createdAt": "2025-08-03T00:43:00Z"
+ },
+ {
+  "id": 137,
+  "name": "Oscorp Studios",
+  "status": "ACTIVE",
+  "memberCount": 42,
+  "owner": {
+   "email": "ops@oscorpstudios.corp.example"
+  },
+  "createdAt": "2025-04-05T20:00:00Z"
+ }
+]
