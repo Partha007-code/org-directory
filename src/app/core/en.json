@@ -1,0 +1,109 @@
+{
+  "app": {
+    "title": "Organisation Directory",
+    "nav": {
+      "label": "Main navigation",
+      "list": "Organisations",
+      "create": "Add organisation"
+    }
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "suspended": "Suspended",
+    "unknown": "Unknown"
+  },
+  "list": {
+    "title": "Organisations",
+    "addButton": "Add organisation",
+    "searchLabel": "Search by name",
+    "searchPlaceholder": "Type a name…",
+    "statusLabel": "Status",
+    "statusAll": "All statuses",
+    "summary": "Showing {shown} of {total} organisations",
+    "tableCaption": "List of organisations. Use the column buttons to sort.",
+    "unnamed": "(No name)",
+    "empty": "—",
+    "invalidEmail": "Invalid email",
+    "created": "“{name}” was added.",
+    "dismiss": "Dismiss",
+    "reset": "Reset",
+    "col": {
+      "name": "Name",
+      "status": "Status",
+      "members": "Members",
+      "owner": "Owner",
+      "created": "Created"
+    },
+    "sort": {
+      "asc": "▲",
+      "desc": "▼",
+      "none": ""
+    }
+  },
+  "states": {
+    "loading": {
+      "title": "Loading organisations…",
+      "text": "This usually takes a second or two."
+    },
+    "error": {
+      "title": "Could not load organisations",
+      "text": "The server did not respond. Nothing is wrong with your connection or your data.",
+      "retry": "Try again"
+    },
+    "partialError": {
+      "text": "Some organisations could not be loaded. {received} of {total} are shown.",
+      "retry": "Load the rest"
+    },
+    "progress": "Loading… {received} of {total} organisations received.",
+    "rateLimit": "The server allows 5 requests per minute. The rest will arrive in {seconds} seconds.",
+    "empty": {
+      "title": "No organisations yet",
+      "text": "Add the first one to get started."
+    },
+    "noResults": {
+      "title": "No organisations match your search",
+      "text": "Try a different name or status.",
+      "clear": "Clear search and filters"
+    }
+  },
+  "form": {
+    "title": "Add organisation",
+    "back": "Back to list",
+    "required": "required",
+    "optional": "optional",
+    "summaryTitle": "Please fix the following:",
+    "uniquenessPartial": "Still loading the existing organisations. The name check may be incomplete until loading finishes.",
+    "submit": "Create organisation",
+    "cancel": "Cancel",
+    "field": {
+      "name": "Name",
+      "status": "Status",
+      "ownerEmail": "Owner email",
+      "memberCount": "Member count"
+    },
+    "statusPlaceholder": "Choose a status",
+    "hint": {
+      "name": "3 to 80 characters. Must be unique.",
+      "memberCount": "A whole number, 0 or more."
+    },
+    "error": {
+      "name": {
+        "required": "Enter a name.",
+        "tooShort": "The name must be at least 3 characters.",
+        "tooLong": "The name must be at most 80 characters.",
+        "duplicate": "An organisation with this name already exists."
+      },
+      "status": {
+        "required": "Choose a status."
+      },
+      "ownerEmail": {
+        "required": "Enter the owner’s email.",
+        "pattern": "Enter a valid email address, like name@company.com."
+      },
+      "memberCount": {
+        "pattern": "Enter a whole number, 0 or more."
+      }
+    }
+  }
+}
