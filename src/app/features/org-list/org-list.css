@@ -1,0 +1,130 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+.notice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  padding-block: var(--space-3);
+}
+
+.retry {
+  margin-top: var(--space-3);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.field label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.summary {
+  margin-bottom: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+/* ---------- table ---------- */
+.table-wrap {
+  overflow-x: auto; /* narrow screens scroll the table, not the whole page */
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+table {
+  width: 100%;
+  min-width: var(--table-min-width);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: var(--space-3) var(--space-4);
+  text-align: start;
+  vertical-align: top;
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+thead th {
+  background: var(--color-background);
+  font-size: var(--font-size-sm);
+}
+
+.sort {
+  font: inherit;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.number {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Long names: show at most 2 lines, then "…" (full text is in the title tooltip) */
+.name {
+  max-width: var(--name-max-width);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+.email {
+  overflow-wrap: anywhere;
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.tag {
+  margin-inline-start: var(--space-2);
+  padding: 0 var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-warning);
+  background: var(--color-warning-background);
+  border: var(--border-width) solid var(--color-warning);
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;   /* <- add this */
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+}

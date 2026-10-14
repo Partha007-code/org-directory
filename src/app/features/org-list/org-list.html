@@ -1,0 +1,165 @@
+<div class="page-header">
+  <h1>{{ 'list.title' | t }}</h1>
+  <a class="button" routerLink="/new">{{ 'list.addButton' | t }}</a>
+</div>
+
+@switch (store.view()) {
+@case ('loading') {
+<!-- STATE 1: first load, nothing to show yet -->
+<div class="box box-info" role="status">
+  <h2>{{ 'states.loading.title' | t }}</h2>
+  <p>{{ 'states.loading.text' | t }}</p>
+</div>
+}
+
+@case ('error') {
+<!-- STATE 2: the very first page failed even after retries -->
+<div class="box box-error" role="alert">
+  <h2>{{ 'states.error.title' | t }}</h2>
+  <p>{{ 'states.error.text' | t }}</p>
+  <button type="button" class="button retry" (click)="retry()">
+    {{ 'states.error.retry' | t }}
+  </button>
+</div>
+}
+
+@case ('ready') {
+@if (store.lastCreatedName(); as name) {
+<div class="box box-success notice" role="status">
+  <span>{{ 'list.created' | t: { name } }}</span>
+  <button type="button" class="button button-secondary" (click)="dismissCreated()">
+    {{ 'list.dismiss' | t }}
+  </button>
+</div>
+}
+
+<!-- Background loading: rows are already visible, the rest keeps arriving -->
+@if (store.loading()) {
+<div class="box box-info notice" role="status">
+  <p>
+    {{ 'states.progress' | t: { received: store.receivedCount(), total: store.serverTotal() ?? ('list.empty' | t) } }}
+    @if (store.waitSeconds() > 0) {
+    {{ 'states.rateLimit' | t: { seconds: store.waitSeconds() } }}
+    }
+  </p>
+</div>
+} @else if (store.failed()) {
+<!-- Some later page failed: keep what we have and offer a retry -->
+<div class="box box-error notice" role="alert">
+  <p>
+    {{ 'states.partialError.text' | t: { received: store.receivedCount(), total: store.serverTotal() ?? ('list.empty' |
+    t) } }}
+  </p>
+  <button type="button" class="button" (click)="retry()">
+    {{ 'states.partialError.retry' | t }}
+  </button>
+</div>
+}
+
+<div class="filters">
+  <div class="field">
+    <label for="search">{{ 'list.searchLabel' | t }}</label>
+    <input id="search" type="search" autocomplete="off" [formControl]="searchControl"
+      [placeholder]="'list.searchPlaceholder' | t" />
+  </div>
+  <div class="field">
+    <label for="status-filter">{{ 'list.statusLabel' | t }}</label>
+    <select id="status-filter" #statusSelect (change)="setStatus(statusSelect.value)">
+      <option value="all" [selected]="statusFilter() === 'all'">{{ 'list.statusAll' | t }}</option>
+      @for (status of statusOptions; track status) {
+      <option [value]="status" [selected]="statusFilter() === status">
+        {{ 'status.' + status | t }}
+      </option>
+      }
+    </select>
+  </div>
+  <button type="button" class="button button-secondary" [disabled]="!hasActiveFilters()" (click)="clearFilters()">
+    {{ 'list.reset' | t }}
+  </button>
+</div>
+
+<!-- aria-live: screen readers hear the count change as the user types -->
+<p class="summary" aria-live="polite">
+  {{ 'list.summary' | t: { shown: visible().length, total: store.organisations().length } }}
+</p>
+
+@if (store.organisations().length === 0) {
+<!-- STATE 3a: the system really has no organisations -->
+<div class="box" role="status">
+  <h2>{{ 'states.empty.title' | t }}</h2>
+  <p>{{ 'states.empty.text' | t }}</p>
+</div>
+} @else if (visible().length === 0) {
+<!-- STATE 3b: organisations exist, but the search/filter hides them all -->
+<div class="box box-warning" role="status">
+  <h2>{{ 'states.noResults.title' | t }}</h2>
+  <p>{{ 'states.noResults.text' | t }}</p>
+  @if (hasActiveFilters()) {
+  <button type="button" class="button button-secondary retry" (click)="clearFilters()">
+    {{ 'states.noResults.clear' | t }}
+  </button>
+  }
+</div>
+} @else {
+<div class="table-wrap">
+  <table>
+    <caption class="visually-hidden">{{ 'list.tableCaption' | t }}</caption>
+    <thead>
+      <tr>
+        <th scope="col" [attr.aria-sort]="ariaSort('name')">
+          <button type="button" class="sort" (click)="sortBy('name')">
+            {{ 'list.col.name' | t }}
+            <span aria-hidden="true">{{ sortIndicator('name') | t }}</span>
+          </button>
+        </th>
+        <th scope="col">{{ 'list.col.status' | t }}</th>
+        <th scope="col" class="number">{{ 'list.col.members' | t }}</th>
+        <th scope="col">{{ 'list.col.owner' | t }}</th>
+        <th scope="col" [attr.aria-sort]="ariaSort('created')">
+          <button type="button" class="sort" (click)="sortBy('created')">
+            {{ 'list.col.created' | t }}
+            <span aria-hidden="true">{{ sortIndicator('created') | t }}</span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- track by OUR uid: the API's id is not unique (id 42 appears twice) -->
+      @for (org of visible(); track org.uid) {
+      <tr>
+        <td>
+          @if (org.name) {
+          <!-- dir="auto": Arabic names read right-to-left, English left-to-right.
+                         title: the full text of very long names is still reachable. -->
+          <div class="name" dir="auto" [attr.title]="org.name">{{ org.name }}</div>
+          } @else {
+          <span class="muted">{{ 'list.unnamed' | t }}</span>
+          }
+        </td>
+        <td><app-status-badge [status]="org.status" /></td>
+        <td class="number">{{ org.memberCount ?? ('list.empty' | t) }}</td>
+        <td class="email">
+          @if (org.ownerEmail) {
+          {{ org.ownerEmail }}
+          @if (!org.ownerEmailValid) {
+          <span class="tag">{{ 'list.invalidEmail' | t }}</span>
+          }
+          } @else {
+          <span class="muted">{{ 'list.empty' | t }}</span>
+          }
+        </td>
+        <td>
+          @if (org.createdAt) {
+          {{ org.createdAt | date: 'mediumDate' : 'UTC' }}
+          } @else {
+          <span class="muted">{{ 'list.empty' | t }}</span>
+          }
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
+}
+}
+}
